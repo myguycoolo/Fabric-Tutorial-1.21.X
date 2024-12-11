@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Tutorial Mod by Coolo!",
+	"authors": [
+		"Coolo!"
+	],
+	"contact": {
+		"homepage": "https://youtube.com/@myguycoolo",
+		"sources": "https://github.com/myguycoolo/Fabric-Tutorial-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.coolo.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.coolo.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.coolo.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
